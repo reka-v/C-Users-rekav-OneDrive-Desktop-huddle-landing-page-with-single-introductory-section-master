@@ -19,13 +19,12 @@ body {
 }
 
 .title-image img{
-  width: auto;
-  max-height: 400px;
+  max-width: 100%;
+  height: auto;
 }
 
 .info {
   padding-top: 40px;
-  padding-left: 0;
 }
 
 h1 {
@@ -56,7 +55,6 @@ h1 {
   display: flex;
   justify-content: flex-end;
   opacity: 0.8;
-
 }
 
 i {
@@ -79,4 +77,50 @@ i {
 .attribution a {
   color: white;
   opacity: 0.8;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .info {
+    padding-top: 0;
+  }
+  .intro {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+  }
+  .logo {
+    max-width: 150px;
+  }
+  .content {
+    margin-top: 50px;
+  }
+  .title-image img{
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .info {
+    text-align: center;
+    padding-left: 15px;
+  }
+  .intro {
+    max-width: 300px;
+  }
+  .btn {
+    margin: auto;
+  }
+  .social-icons {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
 }
