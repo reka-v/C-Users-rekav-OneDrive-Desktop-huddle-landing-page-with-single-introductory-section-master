@@ -1,7 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: url(./images/bg-desktop.svg);
+  background: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: hsl(257, 40%, 49%);
   color: white;
 }
@@ -67,7 +68,7 @@ i {
   font-size: 0.875rem;
 }
 
-i.fa-facebook-f {
+.fa-facebook-f {
   padding: 7px 10px;
 }
 
